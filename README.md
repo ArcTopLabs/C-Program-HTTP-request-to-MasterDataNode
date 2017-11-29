@@ -18,4 +18,4 @@ ArcTop Labs : MasterDataNode Data Solution
 <p>Copy and Replace the access_token (available in your login) in HttpRequestArcTop.c file ####ACCESSTOKEN###### string on line No. 24</p>
             
 
-![alt text](https://github.com/ArcTopLabs/Gantt-Project-Planing-App/blob/master/screenshot/Gantt%20Project%20App.png)
+![alt text](https://github.com/ArcTopLabs/C_Program/blob/master/screenshot/C%20program%20output.png)
