@@ -3,13 +3,6 @@
 Sample C Program to connect with ArcTop Labs #MasterDataNode Data Solution Technology, This C prgram uses Socket
 to connect to port 80 and send request as desired by HTTP protocol to connect with #MasterDataNode. This Program
 can be extended to use port 443 for HTTPS connection. Also some sample program to connect to HTTP request to play with.
-
-## FEATURES ##
-
- - Create new Project Plan
- - Drag Project Plan Task to new date
- - Resize Project Plan Task to new date
- - delete Project Plan 
  
 ## Storage Service ##
 ArcTop Labs : MasterDataNode Data Solution
