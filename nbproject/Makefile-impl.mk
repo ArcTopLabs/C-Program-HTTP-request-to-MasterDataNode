@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=httprequest
+PROJECTNAME=C_Program
 
 # Active Configuration
 DEFAULTCONF=Debug

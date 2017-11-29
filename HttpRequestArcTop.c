@@ -21,7 +21,7 @@ int main(int argc,char *argv[])
     int portno =        80;
     char *host =        "api.masterdatanode.com";
     char data[1026] = "{ \"data\" : [{ \"latidude\" : \"28.6667\", \"longitude\" : \"77.2167\", \"machine\" : \"Mac OS\" }]}";
-    char *message_fmt = "POST /demo/pulse/save/ HTTP/1.1\r\ncache-control: no-cache\r\naccess-token: ####ACCESSTOKEN######\r\ncontent-type:application/json\r\nHost: api.masterdatanode.com\r\nContent-Length: %d\r\n\r\n%s";     //{ \"data\" : [{ \"latidude\" : \"28.6667\", \"longitude\" : \"77.2167\", \"machine\" : \"Mac OS\" }]}";
+    char *message_fmt = "POST /demo/##APPNAME##/save/ HTTP/1.1\r\ncache-control: no-cache\r\naccess-token: ####ACCESSTOKEN######\r\ncontent-type:application/json\r\nHost: api.masterdatanode.com\r\nContent-Length: %d\r\n\r\n%s";     //{ \"data\" : [{ \"latidude\" : \"28.6667\", \"longitude\" : \"77.2167\", \"machine\" : \"Mac OS\" }]}";
 
     struct hostent *server;
     struct sockaddr_in serv_addr;
@@ -38,20 +38,24 @@ int main(int argc,char *argv[])
     sockfd = socket(AF_INET, SOCK_STREAM, 0);
     if (sockfd < 0) error("ERROR opening socket");
 
+    printf("Check Socket .........");
     /* lookup the ip address */
     server = gethostbyname(host);
     if (server == NULL) error("ERROR, no such host");
 
+    printf("Define Host .........");
     /* fill in the structure */
     memset(&serv_addr,0,sizeof(serv_addr));
     serv_addr.sin_family = AF_INET;
     serv_addr.sin_port = htons(portno);
     memcpy(&serv_addr.sin_addr.s_addr,server->h_addr,server->h_length);
 
+    printf("Memory and Port Allocated .........");
     /* connect the socket */
     if (connect(sockfd,(struct sockaddr *)&serv_addr,sizeof(serv_addr)) < 0)
         error("ERROR connecting");
 
+    printf("Waiting for Response .........");
     /* send the request */
     total = strlen(message);
     sent = 0;

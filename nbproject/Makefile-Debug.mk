@@ -36,7 +36,6 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/HttpRequestArcTop.o \
-	${OBJECTDIR}/hello_world.o \
 	${OBJECTDIR}/http.o \
 	${OBJECTDIR}/sample.o
 
@@ -59,21 +58,16 @@ LDLIBSOPTIONS=
 
 # Build Targets
 .build-conf: ${BUILD_SUBPROJECTS}
-	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/httprequest
+	"${MAKE}"  -f nbproject/Makefile-${CND_CONF}.mk ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_program
 
-${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/httprequest: ${OBJECTFILES}
+${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_program: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
-	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/httprequest ${OBJECTFILES} ${LDLIBSOPTIONS}
+	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_program ${OBJECTFILES} ${LDLIBSOPTIONS}
 
 ${OBJECTDIR}/HttpRequestArcTop.o: HttpRequestArcTop.c 
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/HttpRequestArcTop.o HttpRequestArcTop.c
-
-${OBJECTDIR}/hello_world.o: hello_world.c 
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/hello_world.o hello_world.c
 
 ${OBJECTDIR}/http.o: http.c 
 	${MKDIR} -p ${OBJECTDIR}
@@ -91,7 +85,7 @@ ${OBJECTDIR}/sample.o: sample.c
 # Clean Targets
 .clean-conf: ${CLEAN_SUBPROJECTS}
 	${RM} -r ${CND_BUILDDIR}/${CND_CONF}
-	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/httprequest
+	${RM} ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/c_program
 
 # Subprojects
 .clean-subprojects:

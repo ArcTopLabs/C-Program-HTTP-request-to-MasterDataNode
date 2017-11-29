@@ -13,7 +13,6 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>HttpRequestArcTop.c</itemPath>
-      <itemPath>hello_world.c</itemPath>
       <itemPath>http.c</itemPath>
       <itemPath>sample.c</itemPath>
     </logicalFolder>
@@ -41,8 +40,6 @@
       </compileType>
       <item path="HttpRequestArcTop.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="hello_world.c" ex="false" tool="0" flavor2="0">
-      </item>
       <item path="http.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="sample.c" ex="false" tool="0" flavor2="0">
@@ -69,8 +66,6 @@
         </asmTool>
       </compileType>
       <item path="HttpRequestArcTop.c" ex="false" tool="0" flavor2="0">
-      </item>
-      <item path="hello_world.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="http.c" ex="false" tool="0" flavor2="0">
       </item>

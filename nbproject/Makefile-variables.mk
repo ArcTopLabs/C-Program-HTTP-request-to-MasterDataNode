@@ -9,19 +9,19 @@ CND_DISTDIR=dist
 # Debug configuration
 CND_PLATFORM_Debug=GNU-MacOSX
 CND_ARTIFACT_DIR_Debug=dist/Debug/GNU-MacOSX
-CND_ARTIFACT_NAME_Debug=httprequest
-CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/httprequest
+CND_ARTIFACT_NAME_Debug=c_program
+CND_ARTIFACT_PATH_Debug=dist/Debug/GNU-MacOSX/c_program
 CND_PACKAGE_DIR_Debug=dist/Debug/GNU-MacOSX/package
-CND_PACKAGE_NAME_Debug=httprequest.tar
-CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/httprequest.tar
+CND_PACKAGE_NAME_Debug=cprogram.tar
+CND_PACKAGE_PATH_Debug=dist/Debug/GNU-MacOSX/package/cprogram.tar
 # Release configuration
 CND_PLATFORM_Release=GNU-MacOSX
 CND_ARTIFACT_DIR_Release=dist/Release/GNU-MacOSX
-CND_ARTIFACT_NAME_Release=httprequest
-CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/httprequest
+CND_ARTIFACT_NAME_Release=c_program
+CND_ARTIFACT_PATH_Release=dist/Release/GNU-MacOSX/c_program
 CND_PACKAGE_DIR_Release=dist/Release/GNU-MacOSX/package
-CND_PACKAGE_NAME_Release=httprequest.tar
-CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/httprequest.tar
+CND_PACKAGE_NAME_Release=cprogram.tar
+CND_PACKAGE_PATH_Release=dist/Release/GNU-MacOSX/package/cprogram.tar
 #
 # include compiler specific variables
 #
